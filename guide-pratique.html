@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="assets/icon/covilience-favicon.png" type="image/png" sizes="64x64">
+    <title>Covilience | Pour l&#39;avenir de la santé des territoires</title>
+    <meta name="description" content="Covilience est un projet Open-Source de professionnels bénévoles unis pour l'avenir de la santé des territoires.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8SP718V8YG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push( arguments ); }
+gtag( 'js', new Date() );
+gtag( 'config', 'G-8SP718V8YG', {
+    'page_title': window.location.pathname.replace( "/", "" ),
+    'path_location': window.location,
+    'page_path': window.location.pathname
+} );
+if ( window.performance ) {
+    var timeSincePageLoad = Math.round( performance.now() );
+    gtag( 'event', 'timing_complete', {
+        'name': 'load',
+        'value': timeSincePageLoad,
+        'event_category': 'JS Dependencies'
+    } );
+}
+</script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body style="padding-top:6rem;">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <a class="navbar-brand pl-4 my-sm-2 my-md-0" href="#">
+                <img class="align-middle mb-0" src="assets/icon/covilience-logo.png" width="64" height="64" alt="Logo covilience">
+                <span class="d-inline-block align-middle">
+                    <span class="align-middle mb-0">Covilience</span>
+                    <span class="d-block text-right font-italic mt-0" style="font-size: 0.5em;margin-left:30px">by Option Public</span>
+                </span>
+            </a>
+            <ul class="navbar-nav nav-tabs ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Guide pratique <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="documents.html">Documents</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li id="separatorItem" class="nav-item d-none d-lg-inline" style="">
+                    <span id="separatorLink" class="nav-link" style="">|</span>
+                </li>
+                <li class="nav-item">
+                    <a id="download-guide" class="nav-link" href="assets/documents/Méthodologie_Covilience.pdf" target="_blank" download="Méthodologie_Covilience.pdf">
+                        <img class="mr-2" src="assets/icon/pdf.png" height="32px">
+                        Téléchargez-moi
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main role="main">
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar -->
+            <div class="bg-light border-right" id="sidebar-wrapper">
+                <div class="sidebar-heading">Guide pratique</div>
+                <div class="list-group list-group-flush" role="tablist nav nav-tabs">
+                    <a class="list-group-item list-group-item-action bg-light nav-link active" id="introduction-tab" data-toggle="tab" href="#introduction" role="tab" aria-controls="introduction" aria-selected="true">Introduction</a>
+                    <a class="list-group-item list-group-item-action bg-light nav-link" id="objectifs-tab" data-toggle="tab" href="#objectifs" role="tab" aria-controls="introduction" aria-selected="true">Objectifs</a>
+                    <a class="list-group-item list-group-item-action bg-light nav-link" id="macro-tab" data-toggle="tab" href="#macro" role="tab" aria-controls="introduction" aria-selected="true">Chaîne et Macro</a>
+                    <a class="list-group-item list-group-item-action bg-light nav-link" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="introduction" aria-selected="true">Généralités</a>
+                    <a class="list-group-item list-group-item-action bg-light nav-link" id="organisation-tab" data-toggle="tab" href="#organisation" role="tab" aria-controls="introduction" aria-selected="true">Centres de tri</a>
+                    <a class="list-group-item list-group-item-action bg-light nav-link" id="plans-tab" data-toggle="tab" href="#plans" role="tab" aria-controls="introduction" aria-selected="true">Plans Physiques</a>
+                    <a class="list-group-item list-group-item-action bg-light nav-link" id="realisation-tab" data-toggle="tab" href="#realisation" role="tab" aria-controls="introduction" aria-selected="true">Réalisations et directives en cours</a>
+                    <a class="list-group-item list-group-item-action bg-light nav-link" id="cellule-tab" data-toggle="tab" href="#cellule" role="tab" aria-controls="introduction" aria-selected="true">Cellules de crise</a>
+                    <a class="list-group-item list-group-item-action bg-light nav-link" id="numerique-tab" data-toggle="tab" href="#numerique" role="tab" aria-controls="introduction" aria-selected="true">Solution numérique</a>
+                    <a class="list-group-item list-group-item-action bg-light mt-4" href="https://github.com/salym/covilience" target="_blank">
+                        <img class="float-left mr-1" src="assets/icon/github.png" height="32px" width="32px">
+                        Éditez-moi sur Github
+                    </a>
+                </div>
+            </div>
+            <div id="page-content-wrapper">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top sticky-offset">
+                    <button class="btn btn-primary" style="color:var(--blue-light)" id="menu-toggle">Menu</button>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul id="subtitles" class="navbar-nav ml-auto mt-2 mt-lg-0"></ul>
+                    </div>
+                </nav>
+                <div class="container-fluid tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="introduction" role="tabpanel" aria-labelledby="introduction-tab">
+                        <h2>Schéma Directeur Parcours Patient COVID</h2>
+                        <p>Mise en œuvre et fonctionnement d’un centre COVID de tri et de détection dans le cadre d’un suivi global patient.</p>
+                        <p>Ce présent document est interactif, à objectif d’usage collectif, au service de tous les acteurs, est proposé en OPEN SOURCE.</p>
+                        <p>Il est issu d’un travail collégial impulsé et coordonné par OPTION PUBLIQUE.</p>
+                    </div>
+                    <div class="tab-pane fade show" id="objectifs" role="tabpanel" aria-labelledby="objectifs-tab">
+                        <h2>Les objectifs, principes et enjeux des centres de tri et de détection</h2>
+                        <p>Face à l’ampleur de la pandémie, il est nécessaire d’apporter une réponse commune, cohérente et pertinente. Pour ce faire, plusieurs scénarios sont proposés afin de rendre les services de santé plus efficients.</p>
+                        <p>Le principe est de faire venir vers le Centre Covid les malades ambulatoires qui présentent une possibilité d’être atteints. (Information positive.) Les patients seront adressés par les médecins traitants ou le 15.</p>
+                        <p>Ainsi, il est nécessaire d’opérer une rationalisation du cycle de soin, reprogrammation du médecin de ville, création d’un parcours de soins spécifique afin de limiter la propagation du virus.
+                            <ul style="list-style: circle">
+                                <li>Tri médicalisé : renvoi vers le système libéral des patients négatifs ou à surveiller, soins aux malades graves (circuit-court-urgent : interfaçage avec le 15).</li>
+                                <li>Organisation d’une filière de surveillance des patients à risque avec téléconsultation, passage de personnels soignants pour prise de constantes et suivi.</li>
+                                <li>Mise en place de filières d’évacuation vers un centre hospitalier des patients dont l’état se dégrade.</li>
+                            </ul>
+                        </p>
+                        <p>L’efficacité du Centre repose sur la pertinence du tri à l’entrée et sur sa capacité à renvoyer vers la Ville dans les meilleures conditions les personnes qui ne présentent pas de forme sévère. En quelque sorte, il s’agit de mettre en place des chaînes de soins spécialisées:
+                            <ul style="list-style: circle">
+                                <li>Aptes à traiter des cas accidentels urgents exceptionnels.</li>
+                                <li>Capables d'orienter les patients et d’organiser leur suivi.</li>
+                                <li>Pouvant renvoyer vers la médecine de ville et ce, dès le premier sas, les cas ne relevant pas de leur mission dans les meilleures conditions grâce au couplage médico-social assuré par le CCSS.</li>
+                                <li>Mais surtout tendues vers leur mission qui est de métaboliser rapidement et complètement les cas-cibles.</li>
+                            </ul>
+                        </p>
+                        <p><b>Fiable</b>: Le processus est capable d’accueillir et d’orienter TOUS les patients atteints ou suspectés d’être contaminés. Il précise les conditions de cette fiabilité:
+                            <ul style="list-style: circle">
+                                <li>Une fiabilité réduite compte tenu des contingences administratives actuelles.</li>
+                                <li>Une fiabilité idéale qui suppose des conditions exorbitantes du droit commun, en précisant les options pouvant être choisies.</li>
+                                <li>Il ne traite pas du traitement interne à l’hôpital.</li>
+                            </ul>
+                        </p>
+                        <p><b>Résilient</b>: Le processus se doit d’être scalable:
+                            <ul style="list-style: circle">
+                                <li>En quantité: pourra s’adapter à l’augmentation du nombre de cas en mobilisant tous les moyens possibles dans et hors des systèmes de santé.</li>
+                                <li>En proposant des options de dérogation exorbitantes du droit commun des normes administratives et de gestion publique de droit commun.</li>
+                            </ul>
+                        </p>
+                        <p><b>À ce titre, ce guide présente 4 types de structures, le pivot étant bien le principe de la prise en charge en amont pour soulager la pression sur la médecine de ville et hospitalière </b>
+                            <ul>
+                                <li><b>Centre de tri : trier dès l’amont les profils à risque pour optimiser le suivi à domicile ou l’envoi vers l’hôpital.</b></li>
+                                <li><b>Centre de détection : collectiviser dès l’amont le processus de détection pour optimiser la prise en charge de santé.</b></li>
+                                <li>Centre de confinement : isoler les personnes détectées, notamment pour éviter une contamination des familles dans le cadre d’un retour à domicile.</li>
+                                <li>Cellule de crise : organiser, principalement en Mairie ou en interco, l’articulation des moyens physiques et humains pour monter ces centres, les approvisionner, assurer leur régularité administrative, leur fonctionnement financier et exploiter les données relevées.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade show" id="macro" role="tabpanel" aria-labelledby="macro-tab">
+                        <h2>Chaîne de valeur et Macro – Processus cibles permettant de cadrer les périmètres de responsabilités</h2>
+                        <h3 id="macroPart1">1. Schéma Générique du parcours patient</h3>
+                        <p>Les étapes « standard » d’un parcours patient sont matérialisées par la chaîne de valeur* présentée ci-dessous.</p>
+                        <img class="d-block mx-auto" width="70%" src="assets/images/parcours1.png">
+                        <p>Ce modèle servira de socle pour décrire les particularismes proposés de prise en charge particulière du patient COVID.</p>
+                        <p>*Source : capitalisation Portfolio Consulting Group 2020</p>
+                        <div class="line"></div>
+                        <h3 id="macroPart2">2. Schéma Spécifique du parcours patient COVID</h3>
+                        <img class="d-block mx-auto" width="70%" src="assets/images/parcours2.png">
+                        <p>Le zoom sur chacun des blocs de la chaîne de valeur COVID permet de définir les processus qui vont conduire au dimensionnement des centres</p>
+                    </div>
+                    <div class="tab-pane fade show" id="description" role="tabpanel" aria-labelledby="description-tab">
+                        <h2>Description du fonctionnement des centres et de leur articulation dans le circuit global</h2>
+                        <h3 id="descriptionPart1">1. Processus du Centre de TRI</h3>
+                        <p>Le centre de TRI se situe en amont du processus global. Son bon fonctionnement optimise le fonctionnement de l’ensemble de la chaîne.</p>
+                        <img class="d-block mx-auto" width="70%" src="assets/images/parcours3.png">
+                        <p>Les impacts volumétriques et spécifiques du COVID font porter des risques de fiabilité sur le processus qu’il faut aborder dès sa constitution</p>
+                        <p>Source : capitalisation Portfolio Consulting Group et OPTION PUBLIC 2020</p>
+                        <div class="line"></div>
+                        <h3 id="descriptionPart2">2. Points critiques de fiabilité du Centre de Tri COVID-19</h3>
+                        <p>Le parcours optimisé d’un patient COVID est matérialisé par le passage de structures et de modalités spécifiques et ad hoc, ainsi que par un impact volumétrique et particulier sur le dispositif standard.</p>
+                        <img class="d-block mx-auto" width="70%" src="assets/images/table1.png">
+                        <div class="line"></div>
+                        <h3 id="descriptionPart3">3. Processus du Centre de DEPISTAGE</h3>
+                        <p>Le centre de DEPISTAGE permet de soulager d’autant plus le fonctionnement de la chaîne en aval. Il demande une structure renforcée en termes de moyens médicaux.</p>
+                        <img class="d-block mx-auto" width="70%" src="assets/images/parcours4.png">
+                        <p>Afin de contribuer à réguler les risques de contamination des familles dans le cadre d’un retour à domicile, le dispositif peut être complété d’un centre de confinement</p>
+                        <p>Source : capitalisation Portfolio Consulting Group et OPTION PUBLIC 2020</p>
+                        <div class="line"></div>
+                        <h3 id="descriptionPart4">4. Processus du Centre de Confinement</h3>
+                        <p>
+                            <ul style="list-style: circle">
+                                <li>Dans la possibilité où l’état de santé des patients nécessite un confinement total, on peut mettre en place un centre de confinement pour contenir l’infection et la maîtriser. Ce dispositif peut empêcher les personnes vivant en communauté de transmettre le virus à leur entourage et d’améliorer la surveillance des malades</li>
+                                <li>La mise en place de ce dispositif ne peut se faire que s’il y a une politique de dépistage des patients qui est mis en place.</li>
+                            </ul>
+                        </p>
+                        <img class="d-block mx-auto" width="70%" src="assets/images/parcours5.png">
+                        <p>Ce dispositif spécifique applicable en hyper – crise doit faire l’objet d’une description détaillée le cas échéant qui n’est pas l’objet de ce document</p>
+                        <p>Source : OPTION PUBLIC 2020</p>
+                        <div class="line"></div>
+                        <h3 id="descriptionPart5">5. Schéma Générique du parcours patient : Déplacement des patients vers les hôpitaux</h3>
+                        <p>Dans le cadre de l’extraction et du déplacement des patients atteints du COVID-19 il serait pertinent de réserver des ambulances dédiées aux patients du Covid -19. Cela permettrait de réduire les risques de transmissions et d’améliorer la célérité des flux.</p>
+                        <img class="d-block mx-auto" width="70%" src="assets/images/parcours6.png">
+                        <p>L’ensemble du circuit de déplacement POST TRI et DETECTION doit être pensé autant que possible séparé du circuit standard</p>
+                        <p>Source : capitalisation Portfolio Consulting Group et OPTION PUBLIC 2020</p>
+                        <div class="line"></div>
+                        <h3 id="descriptionPart6">6. Schéma Générique du parcours patient : Suivi à domicile</h3>
+                        <p>Au sein du suivi à domicile des patients autonomes et peu autonomes qui sont possiblement atteints du COVID -19 , il est nécessaire de mettre en place deux schèmes de suivi des patients selon la typologie : Autonome & Peu Autonome.</p>
+                        <img class="d-block mx-auto" width="70%" src="assets/images/parcours7.png">
+                        <p>L’efficacité du suivi à domicile est renforcée s’il peut prendre appui sur une chaîne numérique permettant une coordination des moyens et des interventions ciblées </p>
+                    </div>
+                    <div class="tab-pane fade show" id="organisation" role="tabpanel" aria-labelledby="organisation-tab">
+                        <h2>Organisation, moyens matériaux et humains du centre de TRI</h2>
+                        <h3 id="organisationPart1">1. Principes de fonctionnement du centre de TRI </h3>
+                        <p>Les personnes qui se présentent sont accueillies par un personnel non médical qui les équipe, les installe dans la chaîne d’attente en respectant les distances de sécurité.</p>
+                        <p>Chaque personne est vue par une infirmière de préconsultation, qui prend sa température et ses constantes à distance, lui pose les questions clés et évalue rapidement si elle est susceptible d’être positive. Plusieurs possibilités se présentent:
+                            <ul style="list-style: circle">
+                                <li>Si on juge que ce n’est pas le cas, on la renvoie avec des renseignements fournis par le référent social dépendant du CCSS qui se trouve sur la chaîne de sortie « négatif ».</li>
+                                <li>Si son cas est suspect, on la fait passer dans la chaîne dévolue à ces cas. (Identification par marquage coloré.) Le malade est examiné, sort s’il est jugé indemne par une sortie spécifique ou sinon réintroduit dans le circuit Covid.</li>
+                                <li>Si la personne est potentiellement atteinte du Covid-19, elle est dirigée dans la zone dédiée. (Identification par marquage coloré).</li>
+                                <li>Si son cas est douteux, on la fait passer dans la chaîne dévolue à ces cas. (Identification par marquage coloré.) Le malade est examiné, et orienté vers 3 circuits différents: un confinement simple avec surveillance autonome et consignes de sécurité, un confinement avec passage infirmier pour surveillance d’un professionnel et évaluation clinique. Evacuation vers un centre hospitalier.</li>
+                            </ul>
+                        </p>
+                        <p>Le centre de tri organise le suivi de patients ainsi qu' une filière d’évacuation de ceux-ci si dégradation de l’état général.</p>
+                        <p>Un circuit-court-urgent est prévu en cas de malaise, de cas qui s’aggraveraient brutalement, avec une zone destinée à recevoir ce type de malade. La liaison avec la régulation15 est prévue dans le schéma de fonctionnement du CCSS.
+                            <ul>
+                                <li>Les Cabinets Médicaux d’examen de la zone Covid reçoivent les malades par ordre d’arrivée, un collationnement des renseignements administratifs est prévu.</li>
+                                <li>Un examen par un médecin équipé de protections préconisées, confirme le diagnostic, évalue la gravité du cas, conduit à une ordonnance préparée, on raye les mentions inutiles (éviter les surcharges).</li>
+                                <li>Passage au pharmacien lui aussi équipé de protections, recueil des fiches administratives.</li>
+                                <li>Sortie par un accès spécifique.</li>
+                                <li>Organisation du suivi des patients soit par télésurveillance soit par passage des IDELS.</li>
+                                <li>Un couplage permanent avec le CCSS permet de gérer les urgences, les demandes d'hospitalisation, les transports et l'approvisionnement des patients, et de prendre en charge leurs problèmes sociaux.</li>
+                            </ul>
+                        </p>
+                        <div class="line"></div>
+                        <h3 id="organisationPart2">2. Description détaillée du Centre de Tri et Dépistage</h3>
+                        <p>Cette représentation permet de faire le lien entre les fonctionnalités et les moyens à chaque étape.</p>
+                        <p>Remarque : il est considéré que le Dépistage est une fonction complémentaire du Centre de TRI.</p>
+                        <img class="d-block mx-auto" width="95%" src="assets/images/schema1.png">
+                        <p>La description des moyens par fonction permettra de dimensionner les besoins à chaque étape.</p>
+                        <div class="line"></div>
+                        <h3 id="organisationPart3">3. Expression des besoins et Organisation Cible du centre de TRI</h3>
+                        <p>Principales fonctions du Centre
+                            <ul>
+                                <li>Accès au centre</li>
+                                <li>Matériel</li>
+                                <li>Fonctionnement interne</li>
+                                <li>Nettoyage et décontamination des lieux et du mobilier</li>
+                                <li>Gestion des déchets (ménagers et DASRI)</li>
+                            </ul>
+                        </p>
+                        <p>Comment communiquer vers la population l’existence du centre Covid-19 ? Faire un plan de communication sur l’existence du centre covid-19
+                            <ul>
+                                <li>Par qui?</li>
+                                <li>Quels éléments de langage?</li>
+                                <li>Moyens de diffusion?
+                                    <ul style="list-style: circle">
+                                        <li>Sms</li>
+                                        <li>Voie d’affichage administratif</li>
+                                        <li>Distribution dans boîtes aux lettres</li>
+                                        <li>Autres?</li>
+                                    </ul>
+                                </li>
+                                <li>Fréquence de diffusion?</li>
+                            </ul>
+                        </p>
+                        <div class="line"></div>
+                        <h3 id="organisationPart4">4. Centre Covid-19 – Expression des besoins et Organisation Cible – Des locaux adaptés </h3>
+                        <p>Lieu(x) comprenant un espace extérieur et intérieur suffisamment grand pour que les distances de sécurité dites « distanciation sociale » soit à minima respectées.</p>
+                        <p>Lieu(x) accessible(s) facilement en voiture comme à pied, de surcroît également accessible(s) aux personnes ayant un handicap.</p>
+                        <p>Lieu(x) disposant d’un parking de stationnement intégré ou à proximité directe.</p>
+                        <p>Lieu(x) disposant de plusieurs points d’accès permettant de mettre en place, à bonne distance, des flux distincts « entrants » et « sortants » à l’extérieur comme à l’intérieur des locaux:
+                            <ul style="list-style: circle">
+                                <li>Pour les véhicules: un point d’entrée, de stationnement (1 emplacement sur 2 sera vide de tout véhicule) et un point de sortie</li>
+                                <li>Pour les piétons: un point d’entrée et un point de sortie distinct et suffisamment éloigné l’un de l’autre si ces points ne peuvent être à l’opposé l’un de l’autre. Ces accès piétons doivent disposer de rampes permettant l’accessibilité aux locaux.</li>
+                            </ul>
+                        </p>
+                        <p>Lieu(x) disposant de points d’eau répartis et en nombre suffisant.</p>
+                        <p>Lieu(x) disposant de vestiaires hommes et de vestiaires femmes, de douches et de sanitaires en nombre suffisant.</p>
+                        <p>Lieu(x) disposant d’un espace sécurisé pour stocker le matériel médical (fermeture à clé à minima)</p>
+                        <p>Lieu(x) disposant d’un espace dédié à la collecte et à l’entreposage des déchets ménagers et surtout des DASRI. Cet espace doit être excentré et directement accessible par le personnel de l’entreprise de collecte des déchets.</p>
+                        <p>Lieu(x) disposant d’un espace d’une superficie suffisante, pour respecter la distanciation sociale [à défaut, limiter le nombre de personnes présentes en même temps], qui sera dédié au personnel du centre covid-19 pour les pauses et la restauration.</p>
+                        <p>Un espace dédié au stationnement d’une ambulance pour l’évacuation de patients vers l’hôpital/clinique.</p>
+                        <div class="line"></div>
+                        <h3 id="organisationPart5">5. Centre Covid-19 – Expression des besoins et Organisation Cible – Organisation d’accès au Centre Covid-19</h3>
+                        <p>A chaque point d’accès « entrants », un personnel d’accueil et d’orientation sera présent, idem pour le stationnement un personnel indiquera la place où devra s’effectuer le stationnement du véhicule.</p>
+                        <p>A chaque pont d’accès, un affichage d’informations sera présent.</p>
+                        <p>Les flux « entrants » et « sortants » seront matérialisés par un barriérage en fixe de type « vauban » depuis la périphérie du bâtiment jusqu’aux points d’accès de celui-ci: chaque circuit devra porter un affichage précisant « flux entrant » / « flux sortant »</p>
+                        <p>Dans chacun des circuits, une distanciation sociale devra être respectée par les patients accédant ou sortant du centre Covid-19.</p>
+                        <div class="line"></div>
+                        <h3 id="organisationPart6">6. Centre Covid-19 – Expression des besoins et Organisation Cible – Matériel nécessaire au fonctionnement du Centre Covid-19</h3>
+                        <p><span style="text-decoration: underline">Espace d’accueil et d’attente :</span> des chaises, des tables, des panneaux d’affichage sur pieds destinés à l’information des personnes, des poubelles et leurs sacs, un ordinateur avec une application prenant en compte les informations concernant le patient. Le patient devra remplir une fiche de ce <a target="_blank" href="https://drive.google.com/file/d/1IqX07RzknQKsa8jYAkcPKuEWPaIOrcNT/view?usp=sharing">format-là</a>.</p>
+                        <p><span style="text-decoration: underline">Espace d’attente devant le box du médecin :</span> des chaises, des poubelles et leurs sacs.</p>
+                        <p><span style="text-decoration: underline">Espace de consultation privatif ou box « médecin » :</span> pour créer ces box, il faut des parois amovibles ou paravents permettant une consultation en toute confidentialité en l’absence de bureaux préexistants pouvant assurer cette fonction:
+                            <ul>
+                                <li>Des chaises (1 pour le médecin, 2 pour les patients)</li>
+                                <li>Une table de consultation</li>
+                                <li>Une table et un ordinateur comprenant l’application de gestion du patient</li>
+                                <li>Une poubelle normale et une poubelle DASRI</li>
+                            </ul>
+                        </p>
+                        <p><span style="text-decoration: underline">Espace de repos et de restauration des équipes du centre covid-19 :</span> tables, chaises, poubelles, points d’eau potable, frigidaire, etc..</p>
+                        <div class="line"></div>
+                        <h3 id="organisationPart7">7. Matériel à prévoir pour équiper les centres de consultations</h3>
+                        <p>
+                            <ul style="list-style: circle">
+                                <li>Des paravents pour délimiter les zones / des bandes adhésives de marquage au sol</li>
+                                <li>Du matériel d’affichage et de signalétique du matériel informatique, une connexion internet, des feuilles de papier, des stylos</li>
+                                <li>Organisation de l évacuation des déchets</li>
+                                <li>Organiser un service de blanchisserie pour le linge à laver et des serviettes pour la douche</li>
+                                <li>Prévoir un local propre pour le stockage de matériel</li>
+                                <li>Un local « sale » pour entreposer les déchets en attente d’évacuation</li>
+                                <li>Des imprimantes pour imprimer ordo, consignes de confinement, fiches de suivi etc etc</li>
+                                <li>Deux lits et un brancard, ainsi que des protections à usage unique, des lits d’examens</li>
+                                <li>Quatre tables</li>
+                                <li>Dix chaises</li>
+                                <li>Cinq poubelles équipées en permanence de sacs (une fois utilisés, les sacs fermés seront ensachés dans un autre sac) ainsi que des containers situés à l’extérieur du bâtiment</li>
+                                <li>Trois fauteuils destinés aux personnes en attente d’hospitalisation</li>
+                                <li>Des pulvérisateurs de produit nettoyant ainsi que des lingettes pour assurer la désinfection du matériel</li>
+                                <li>Du savon liquide, des essuie-mains à usage unique et des solutions hydro alcooliques pour le lavage des mains</li>
+                                <li>Des gants, des masques FFP2, des lunettes de protection ainsi qu’une sur blouse</li>
+                                <li>Du matériel pour la prise de constantes qui restera au centre</li>
+                                <li>Le médecin sera équipé de sa trousse de consultation</li>
+                            </ul>
+                        </p>
+                        <div class="line"></div>
+                        <h3 id="organisationPart8">8. Centre Covid-19 – Expression des besoins et Organisation Cible – Fonctionnement du Centre Covid-19</h3>
+                        <p>Espace d’accueil et d’attente :
+                            <ul style="list-style: circle">
+                                <li>Dans cet espace d’accueil, les personnes sont accueillies par un secouriste qui leur demande de procéder au lavage des mains (point d’eau ou solution hydro alcoolique)</li>
+                                <li>Ensuite elles attendent de rencontrer une infirmière pour un 1er bilan et prise des informations nécessaires (nom, prénom, etc…)</li>
+                                <li>Enfin elles sont orientées vers le box de médecin</li>
+                            </ul>
+                        </p>
+                        <p>Espace d’attente devant le box du médecin</p>
+                        <p>Espace de consultation avec le médecin: le médecin renseigne l’application y compris pour le suivi du patient</p>
+                        <p>Sortie du patient à l’issue de la consultation: 3 cas possibles
+                            <ul style="list-style: circle">
+                                <li>Sortie pour confinement à la maison (peu de symptômes, mais avec un suivi sur l’évolution)</li>
+                                <li>Sortie pour confinement à la maison avec un suivi de type « hospitalisation à domicile »</li>
+                                <li>Sortie avec évacuation vers un hôpital/clinique</li>
+                            </ul>
+                        </p>
+                        <p>Restauration des équipes du centre covid-19: plusieurs possibilités: à définir
+                            <ul style="list-style: circle">
+                                <li>Repas froids livrés par une société de restauration</li>
+                                <li>Repas personnels apportés par chacun: l’espace dédié doit être équipé d’un frigidaire</li>
+                            </ul>
+                        </p>
+                        <div class="line"></div>
+                        <h3 id="organisationPart9">9. Centre Covid-19 – Expression des besoins et Organisation Cible –Nettoyage et décontamination du Centre Covid-19</h3>
+                        <p>Les lieux (sanitaires, douches, vestiaires, box..) comme le mobilier, doivent être nettoyés et les surfaces décontaminées:</p>
+                        <p>Il appartiendra à chaque responsable de centre de prévoir ces ressources en fonction des disponibilités locales</p>
+                        <p>
+                            <ul>À définir par les gestionnaires du centre ou les élus locaux
+                                <li>Par qui?
+                                    <ul style="list-style: circle">
+                                        <li>Personnel de la collectivité ou société de nettoyage</li>
+                                    </ul>
+                                </li>
+                                <li>Fréquence de passage?
+                                    <ul style="list-style: circle">
+                                        <li>Pour les locaux: 2 fois/jours ou plus selon la superficie des locaux et le nombre de personnes accueillies</li>
+                                        <li>Pour les surfaces: toutes les heures</li>
+                                    </ul>
+                                </li>
+                                <li>Avec quels produits
+                                    <ul style="list-style: circle">
+                                        <li>À définir sur zone en fonction des ressources nécessaires</li>
+                                    </ul>
+                                </li>
+                                <li>Stockage des produits:
+                                    <ul style="list-style: circle">
+                                        <li>Où: sur place dans local sécurité</li>
+                                        <li>Prévoir des bacs de rétention si produits dangereux stockés sur place en quantité</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade show" id="plans" role="tabpanel" aria-labelledby="plans-tab">
+                        <h2>Plan physiques de fonctionnement des Centres</h2>
+                        <h3 id="plansPart1">1. Plan générique de Centre de détection dans l’urbanisme</h3>
+                        <img class="d-block mx-auto" width="70%" src="assets/images/plan1.jpg">
+                        <div class="line"></div>
+                        <h3 id="plansPart2">2. Plan de déambulation d’un centre de Dépistage</h3>
+                        <img class="d-block mx-auto" width="70%" src="assets/images/schema2.png">
+                        <div class="line"></div>
+                        <h3 id="plansPart3">3. Plan de déambulation d’un centre de Dépistage</h3>
+                        <img class="d-block mx-auto" width="70%" src="assets/images/schema3.png">
+                        <div class="line"></div>
+                        <h3 id="plansPart4">4. Plan physique d’organisation du centre de dépistage (exemple)</h3>
+                        <img class="d-block mx-auto" width="70%" src="assets/images/schema4.png">
+                    </div>
+                    <div class="tab-pane fade show" id="realisation" role="tabpanel" aria-labelledby="realisation-tab">
+                        <h2>Exemples de réalisation et de directives en cours</h2>
+                        <h3 id="realisationPart1">1. Centre Covid-19 – Exemple de Centre – Centre de consultations pluridisciplinaire à Moissac (82)</h3>
+                        <p>Afin de désengorger l’hôpital et de faire en sorte que les personnes pouvant être atteintes par le Covid-19, présentant des symptômes mineurs, ne soient pas en relation avec les autres patients des cabinets médicaux ou les urgences du CHIC, la commune de Moissac à créé un centre de consultations Covid-19.</p>
+                        <p>A l’initiative des médecins du groupe médical Pasteur, près de 90 professionnels de santé (médecins, pneumologues, infirmières, kinésithérapeutes, dentistes, podologues, biologistes, psychologues, personnel de la croix rouge, coordinateur de l’hôpital) et les services de la Mairie ont travaillé́ jour et nuit pour faire naître, en 3 jours, ce centre de consultations.</p>
+                        <p>Voici les données clés :
+                            <ul style="list-style: circle">
+                                <li>Ouverture le 20 mars, tous les jours de 9h à 18h avec un numéro dédié : 3966</li>
+                                <li>Pas de prise d’initiative sans un avis médical</li>
+                                <li>15 à 25 personnes sur place (personnels soignants, personnels désinfectant les box après chaque consultation) et un Centre d’appels constitué de 2 à 4 personnes.</li>
+                                <li>Capacité de recevoir 250 personnes/jour avec des traducteurs de diverses origines</li>
+                                <li>Un suivi à J+2,J+7 et J+14 pour les personnes confinées</li>
+                                <li>Des modèles d’ordonnances pré-remplies</li>
+                                <li>1 « fiche patient Covid ARS »</li>
+                                <li>1 fiche de liaison standard délivrée à l’accueil de l’hôpital</li>
+                                <li>Une formation sur l’hygiène de 4H pour les intervenants</li>
+                            </ul>
+                        </p>
+                        <div class="line"></div>
+                        <h3 id="realisationPart2">2. Centre Covid-19 – Exemple de Centre – Recommandation de l’ARS</h3>
+                        <p><b>L’ARS des Hauts de France a établi le 20 mars des lignes directrices</b> afin de répondre aux besoins des professionnels d’organiser des locaux et des procédures permettant d’isoler la prise en charge des patients potentiellement infectés COVID 19. Cette offre vient en soutien de la prise en charge des patients par leur médecin traitant.</p>
+                        <p><b>L’adressage sera fait par les SAMU,</b> régulations libérales, plateforme de l’Assurance Maladie, et médecins traitants qui seront informés de l’existence des centres dédiés et de la possibilité́ d’y adresser des patients sur rendez-vous dans la mesure du possible. Le Samu reste le contact privilégié.</p>
+                        <p><b>Le centre doit être ouvert 7J/7 de préférence de 8H à 20H</b>. Cependant, cela est à moduler selon les besoins du territoire et les capacités d’organisation des professionnels. Possibilité d’envisager des horaires de consultation dédiés aux téléconsultations.</p>
+                        <p><b>Pour l’équipe soignante</b>, l’ARS recommande 1 médecin généraliste, 1 IDE ou soignant, 1 service d’hygiène et un service d’accueil. Il est demandé à la personne s’occupant de l’accueil, d’envoyer quotidiennement à l’ARS le nombre de consultations réalisées dans la journée ; l’objectif sera d’adapter les organisations au plus près de l’évolution de l’épidémie, à cette adresse mail : ARS-HDF-DEFENSE@ars.sante.fr</p>
+                        <p><b>Pour l’aménagement des locaux</b> : une salle d’attente où l’on s’assure d’un à deux mètres entre les chaises. Ne pas mettre de magazines, ni prospectus ni jouets. S’il y a 2 locaux de consultation, en fonction de l’activité, possibilité d’alterner leur utilisation pour le temps de la désinfection. En dehors d’une impossibilité de consulter seul, le patient ne doit pas être accompagné pour se rendre à sa consultation. <b>AUCUN DÉPISTAGE NE DOIT ÊTRE REALISÉ EN AMBULATOIRE.</b></p>
+                        <p>Equipement et procédures d’hygiène : Masques de protection, Lavage des mains au savon ou au soluté hydro alcoolique, Blouse (à laver tous les soirs à 60° ou à remplacer) ou tenue spécifique à mettre en arrivant au centre et à retirer avant de repartir (pour lavage à 60°), désinfection du bureau et de la table d’examen après chaque passage, Bio désinfection 1 à 2 fois par jour.</p>
+                        <p>Dans quelles structures installer le centre ? Dans une maison médicale de garde au sein d’un établissement de santé ou dans un autre local mis à disposition par un établissement de santé. Dans une maison de santé́ pluriprofessionnelle, centre de santé, local dans un hôpital de proximité, dans un local dédié, pouvant s’appuyer sur le maillage sanitaire existant.</p>
+                        <p>Modalités d’accompagnement de l’ARS Hauts de France : En fonction des besoins des patients sur les territoires et des organisations professionnelles, l’ARS Hauts de France pourra accompagner financièrement la mise en place des centres dédiés COVID 19 et des flux dédiés COVID 19 au sein des structures d’exercice coordonné, afin de compenser les frais engagés par les professionnels, de la façon suivante :
+                            <ul style="list-style: circle">Sur la base d’un fonctionnement 7 jours sur 7, de 8h à 20h, pendant 2 mois :
+                                <li>Forfait temps soignant : 2 ETP pour un fonctionnement 7/7 de 8h à 20h : 13 500 € pour deux mois</li>
+                                <li>Forfait accueil / secrétariat : 2 ETP pour un fonctionnement 7/7 de 8h à 20h : 12 000 € pour deux mois</li>
+                                <li>Forfait hygiène : 2 ETP pour un fonctionnement 7/7 de 8h à 20h : 6 500 € pour deux mois</li>
+                                <li>Forfait de compensation de participation médicale COVID 19 : 12 000 € par structure pour deux mois.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade show" id="cellule" role="tabpanel" aria-labelledby="cellule-tab">
+                        <h2>Fonctionnement d'une cellule de crise</h2>
+                        <h3>Exemple d’initiative locale - Cellule de Crise en Mairie</h3>
+                        <p>Afin de lutter efficacement contre l'épidémie, il est nécessaire de coordonner toutes les forces locales afin de créer de la synergie dans les politiques publiques développées pour lutter contre l’épidémie. Nous proposons la mise en place d’une cellule de crise en Mairie sous le prisme de la méthode du questionnement (Q.Q.O.C.Q). Un guide pour les initiatives locales est disponible <a target="_blank" href="https://drive.google.com/file/d/1Dn_gyQ5iF19xzNfjBSNsTaME9yQsIJbZ/view?usp=sharing">ici</a>.</p>
+                        <img class="d-block mx-auto" width="80%" src="assets/images/table2.png">
+                    </div>
+                    <div class="tab-pane fade show" id="numerique" role="tabpanel" aria-labelledby="numerique-tab">
+                        <h2>Solution numérique de pilotage de l'ensemble du parcours : CRISISOFT</h2>
+                        <h3 id="numeriquePart1">1. Données de référence</h3>
+                        <p>Le schéma de données de référence collectées lors de l’accueil est renseigné dans le formulaire consultable sur ce lien : formulaire de données : 
+                            <a href="documents.html" class="btn btn-sm cov-btn-blue-light" role="button" aria-pressed="true">
+                                <img src="assets/icon/download-w.png" width="32px;">
+                                CENTRE DE TRIE
+                            </a>
+                        </p>
+                        <div class="line"></div>
+                        <h3 id="numeriquePart2">2. La solution CRISISOFT comme solution numérique</h3>
+                        <p>CrisiSoft met à disposition entièrement gratuitement et sans engagement une version simplifiée de sa solution informatique de gestion opérationnelle et coopérative de gestion de crises sanitaires auprès des ARS, des SAMU et des services spécifiques sur le territoire métropolitain et pendant toute la durée de la crise CoVid-19. Notre solution vise à répondre à quelques-unes des problématiques très opérationnelles des futurs centres CoVid-19 et des enjeux de supervision par les collectivités locales et les ARS :
+                            <ul>
+                                <li>Sécuriser et garantir l'intégrité de la filière CoVid-19.</li>
+                                <li>Recenser précisément et en temps réel les patients CoVid-19 en fonction de la gravité des cas, de leur orientation sur les structures spécifiques CoVid-19 (Prélèvement, Suivi…), les services spécialisés, leur confinement à domicile...</li>
+                                <li>Connaître l'état de l’activité en temps réel de la filière locale, départementale ou régionale et les flux de patients de chacune d’entre elles.</li>
+                                <li>Échanger et consigner rapidement des informations cruciales avec l'ensemble de la filière via une main-courante partagée.</li>
+                                <li>Informer rapidement les partenaires, collaborateurs, instances sans saturer les moyens de communication, sans gaspiller de la ressource humaine cruciale et sans alourdir les tâches administratives.</li>
+                            </ul>
+                        </p>
+                        <p>CrisiSoft a mis en place un dispositif exceptionnel pour les accompagner sur la durée de cette crise.
+                            <ul>
+                                <li>Fonctionnalités simplifiées : nous avons retravaillé nos interfaces et nos process techniques pour permettre une appropriation immédiate du logiciel par les opérateurs.</li>
+                                <li>Déploiement rapide : 1 jour maximum par nos équipes à distance.</li>
+                                <li>Prise en charge de l'ensemble des coûts : licence, hébergement sécurisé des données, configuration et paramétrage.</li>
+                                <li>Journée d'information/formation.</li>
+                                <li>Tutoriels d'utilisation.</li>
+                                <li>Hotline fonctionnelle et technique.</li>
+                            </ul>
+                        </p>
+                        <p>Si la solution devait être retenue dans le cadre ce projet, il faudrait faire évoluer le dispositif pour répondre à l’ampleur des déploiements envisagés et à trouver les ressources financières pour ce faire.</p>
+                        <p>
+                            <a href="documents.html" class="btn btn-sm cov-btn-blue-light" role="button" aria-pressed="true">
+                                <img src="assets/icon/download-w.png" width="32px;">
+                                Découverte du périmètre fonctionnel MenKorn CoVid-19
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" id="cookiebanner" src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.2.2/cookiebanner.min.js" data-close-text="J'accepte" data-message="Ce site web utilise des APIs tiers pour fonctionner correctement, des cookies sont susceptibles d'être stockés<br>mais nous ne collectons aucune information privée." data-bg="#64AEFF" data-height="64px" data-linkmsg="En savoir plus" data-font-family="'Open Sans', sans-serif" data-fg="#fff" data-link="#fff" data-close-style="padding:5px 10px; float:right; border:1px solid white; margin:10px">
+    </script>
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md text-center mb-3 align-self-center">
+                <small class="d-block mb-3 text-muted">
+                    Contenu du guide sous<br>Licence Creative Commons<br>
+                </small>
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="5.5 -3.5 64 64" enable-background="new 5.5 -3.5 64 64" xml:space="preserve">
+                    <g>
+                        <circle fill="#FFFFFF" cx="37.785" cy="28.501" r="28.836" />
+                        <path d="M37.441-3.5c8.951,0,16.572,3.125,22.857,9.372c3.008,3.009,5.295,6.448,6.857,10.314   c1.561,3.867,2.344,7.971,2.344,12.314c0,4.381-0.773,8.486-2.314,12.313c-1.543,3.828-3.82,7.21-6.828,10.143   c-3.123,3.085-6.666,5.448-10.629,7.086c-3.961,1.638-8.057,2.457-12.285,2.457s-8.276-0.808-12.143-2.429   c-3.866-1.618-7.333-3.961-10.4-7.027c-3.067-3.066-5.4-6.524-7-10.372S5.5,32.767,5.5,28.5c0-4.229,0.809-8.295,2.428-12.2   c1.619-3.905,3.972-7.4,7.057-10.486C21.08-0.394,28.565-3.5,37.441-3.5z M37.557,2.272c-7.314,0-13.467,2.553-18.458,7.657   c-2.515,2.553-4.448,5.419-5.8,8.6c-1.354,3.181-2.029,6.505-2.029,9.972c0,3.429,0.675,6.734,2.029,9.913   c1.353,3.183,3.285,6.021,5.8,8.516c2.514,2.496,5.351,4.399,8.515,5.715c3.161,1.314,6.476,1.971,9.943,1.971   c3.428,0,6.75-0.665,9.973-1.999c3.219-1.335,6.121-3.257,8.713-5.771c4.99-4.876,7.484-10.99,7.484-18.344   c0-3.543-0.648-6.895-1.943-10.057c-1.293-3.162-3.18-5.98-5.654-8.458C50.984,4.844,44.795,2.272,37.557,2.272z M37.156,23.187   l-4.287,2.229c-0.458-0.951-1.019-1.619-1.685-2c-0.667-0.38-1.286-0.571-1.858-0.571c-2.856,0-4.286,1.885-4.286,5.657   c0,1.714,0.362,3.084,1.085,4.113c0.724,1.029,1.791,1.544,3.201,1.544c1.867,0,3.181-0.915,3.944-2.743l3.942,2   c-0.838,1.563-2,2.791-3.486,3.686c-1.484,0.896-3.123,1.343-4.914,1.343c-2.857,0-5.163-0.875-6.915-2.629   c-1.752-1.752-2.628-4.19-2.628-7.313c0-3.048,0.886-5.466,2.657-7.257c1.771-1.79,4.009-2.686,6.715-2.686   C32.604,18.558,35.441,20.101,37.156,23.187z M55.613,23.187l-4.229,2.229c-0.457-0.951-1.02-1.619-1.686-2   c-0.668-0.38-1.307-0.571-1.914-0.571c-2.857,0-4.287,1.885-4.287,5.657c0,1.714,0.363,3.084,1.086,4.113   c0.723,1.029,1.789,1.544,3.201,1.544c1.865,0,3.18-0.915,3.941-2.743l4,2c-0.875,1.563-2.057,2.791-3.541,3.686   c-1.486,0.896-3.105,1.343-4.857,1.343c-2.896,0-5.209-0.875-6.941-2.629c-1.736-1.752-2.602-4.19-2.602-7.313   c0-3.048,0.885-5.466,2.658-7.257c1.77-1.79,4.008-2.686,6.713-2.686C51.117,18.558,53.938,20.101,55.613,23.187z" />
+                    </g>
+                </svg>
+            </div>
+            <div class="col-12 col-md text-center mb-3 align-self-center">
+                <small class="d-block mb-3 text-muted">
+                    <span class="d-block">Covilience est un projet impulsé par</span>
+                    <span class="d-block mt-2" style="font-weight: bold; font-size: 1.2rem; font-family: 'Playfair Display', serif;">
+                        Option Public
+                    </span>
+                </small>
+            </div>
+            <div class="col-12 col-md text-center mb-3 align-self-center">
+                <small class="d-block mb-3 text-muted">
+                    Covilience logo & website &copy;
+                </small>
+                <a href="https://salym.me" target="_blank">
+                    <img class="mb-2" src="assets/icon/logo-long-salymme.png" width="100px" alt="Salym.me logo">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center text-secondary">
+                <p><a class="text-muted" href="mentions-legales.html">Mentions légales & Conditions d'utilisation</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script src="scripts.js" type="text/javascript"></script>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /index.html
+Allow: /guide-pratique.html
+Allow: /documents.html
+Allow: /contact.html
+Allow: /mentions-legales.html
+Allow: /sitemap.xml
+Allow: /assets/
+Disallow: /assets/timeline/
+Disallow: /styles.css
+Disallow: /scripts.css
+
+Sitemap: https://covilience.org/sitemap.xml
