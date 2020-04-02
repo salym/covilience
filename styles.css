@@ -244,6 +244,11 @@ footer {
     padding: 20px;
 }
 
+#v-pills-tabContent h2 {
+    margin: 20px 0;
+}
+
+
 #v-pills-tabContent ol, #v-pills-tabContent ul {
     list-style: decimal;
     margin-left: 40px;

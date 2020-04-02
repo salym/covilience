@@ -32,18 +32,34 @@ if ( window.performance ) {
 </head>
 
 <body style="padding-top:6rem;">
+
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
+            
         </button>
+
+        <a class="navbar-brand pl-4 my-sm-2 my-md-0 mr-auto d-inline-block d-lg-none" href="#">
+            <img class="align-middle mb-0" src="assets/icon/covilience-logo.png" width="64" height="64" alt="Logo covilience">
+            <span class="d-inline-block align-middle">
+                <span class="align-middle mb-0">Covilience</span>
+                <span class="d-block text-right font-italic mt-0" style="font-size: 0.5em;margin-left:30px">by Option Public</span>
+            </span>
+        </a>
+
+        <button class="btn btn-primary ml-auto d-lg-none" style="color:var(--blue-light)" id="menu-toggle">Sommaire</button>
+        
         <div class="collapse navbar-collapse" id="menu">
-            <a class="navbar-brand pl-4 my-sm-2 my-md-0" href="#">
+
+            <a class="navbar-brand pl-4 my-sm-2 my-md-0 d-none d-lg-inline-block" href="#">
                 <img class="align-middle mb-0" src="assets/icon/covilience-logo.png" width="64" height="64" alt="Logo covilience">
                 <span class="d-inline-block align-middle">
                     <span class="align-middle mb-0">Covilience</span>
-                    <span class="d-block text-right font-italic mt-0" style="font-size: 0.5em;margin-left:30px">by Option Public</span>
+                    <span class="d-block text-right font-italic mt-0" style="font-size: 0.5em;">by Option Public</span>
                 </span>
             </a>
+
             <ul class="navbar-nav nav-tabs ml-auto mt-2 mt-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Accueil</a>
@@ -69,6 +85,7 @@ if ( window.performance ) {
             </ul>
         </div>
     </nav>
+
     <main role="main">
         <div class="d-flex" id="wrapper">
             <!-- Sidebar -->
@@ -91,21 +108,12 @@ if ( window.performance ) {
                 </div>
             </div>
             <div id="page-content-wrapper">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top sticky-offset">
-                    <button class="btn btn-primary" style="color:var(--blue-light)" id="menu-toggle">Menu</button>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul id="subtitles" class="navbar-nav ml-auto mt-2 mt-lg-0"></ul>
-                    </div>
-                </nav>
                 <div class="container-fluid tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="introduction" role="tabpanel" aria-labelledby="introduction-tab">
                         <h2>Schéma Directeur Parcours Patient COVID</h2>
                         <p>Mise en œuvre et fonctionnement d’un centre COVID de tri et de détection dans le cadre d’un suivi global patient.</p>
                         <p>Ce présent document est interactif, à objectif d’usage collectif, au service de tous les acteurs, est proposé en OPEN SOURCE.</p>
-                        <p>Il est issu d’un travail collégial impulsé et coordonné par OPTION PUBLIQUE.</p>
+                        <p>Il est issu d’un travail collégial impulsé et coordonné par OPTION PUBLIC.</p>
                     </div>
                     <div class="tab-pane fade show" id="objectifs" role="tabpanel" aria-labelledby="objectifs-tab">
                         <h2>Les objectifs, principes et enjeux des centres de tri et de détection</h2>
