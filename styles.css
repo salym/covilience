@@ -239,6 +239,11 @@ footer {
     font-size: 1.2rem;
 }
 
+#sidebar-wrapper .sidebar-foote {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
 #sidebar-wrapper .list-group {
     width: 15rem;
     padding: 0;
@@ -253,6 +258,23 @@ footer {
 #page-content-wrapper {
     /* min-width: 100%; */
     width: 100%;
+}
+
+@media (min-width: 992px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+        display: block;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        /* margin-left: -15rem; */
+        display: block;
+    }
 }
 
 #v-pills-tabContent h1,
@@ -281,28 +303,18 @@ footer {
     color: rgba(0, 0, 0, .5);
 }
 
+.github-link {
+    /* color: rgba(0, 0, 0, .5); */
+    color: var(--blue-light);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
 .list-group-item.active {
     color: rgba(0, 0, 0, .9);
     border-top-left-radius: .125rem !important;
     border-top-right-radius: .125rem !important;
     border-bottom: .214rem solid var(--blue-light) !important;
-}
-
-@media (min-width: 992px) {
-    #sidebar-wrapper {
-        margin-left: 0;
-        display: block;
-    }
-
-    #page-content-wrapper {
-        min-width: 0;
-        width: 100%;
-    }
-
-    #wrapper.toggled #sidebar-wrapper {
-        /* margin-left: -15rem; */
-        display: block;
-    }
 }
 
 @media (max-width: 768px) {
