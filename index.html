@@ -84,30 +84,34 @@ if ( window.performance ) {
         </div>
     </nav>
     <main role="main">
+
         <section class="container-fluid" style="position: relative; height: 500px; background-image: linear-gradient(var(--orange), var(--orange-light));">
             <div class="row justify-content-center" style="height: 100%">
                 <div class="col-12 col-md-8 text-center align-self-center align-middle text-white">
                     <h2>Covilience est un projet Open-Source de professionnels bénévoles unis pour l'avenir de la santé des territoires</h2>
                     <br>
-                    <h5>Nous avons édité un guide pratique de gestion du parcours patient à destination des Collectivités Territoriales et des Personnels Médicaux</h5>
+                    <h5>Un guide pratique en ligne de gestion du parcours patient à destination des Collectivités Territoriales et des Personnels Médicaux</h5>
                 </div>
                 <svg style="position: absolute; left:0; bottom: 0; width: 100%; height: 50px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01" preserveAspectRatio="none">
                     <path style="" fill="#fafafa" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0 -135.53)" /></svg>
             </div>
         </section>
+
         <section id="sectionTimeline" class="container">
+
+            <h2 class="text-center">Apprenez comment gérer les différentes étapes du parcours patient</h2>
+
             <div class="row cd-h-timeline js-cd-h-timeline">
                 <div class="cd-h-timeline__container container">
                     <div class="cd-h-timeline__dates">
                         <div class="cd-h-timeline__line">
                             <ol>
-                                <li><a href="#0" data-date="01/04/2020" class="cd-h-timeline__date cd-h-timeline__date--selected">Orientation</a></li>
-                                <li><a href="#0" data-date="02/05/2020" class="cd-h-timeline__date">Transport</a></li>
-                                <li><a href="#0" data-date="02/05/2020" class="cd-h-timeline__date">Zone tampon</a></li>
-                                <li><a href="#0" data-date="03/06/2020" class="cd-h-timeline__date">Traitement</a></li>
-                                <li><a href="#0" data-date="04/07/2020" class="cd-h-timeline__date">Suivi</a></li>
-                                <li><a href="#0" data-date="05/08/2020" class="cd-h-timeline__date">Funéraille</a></li>
-                                <li class="d-none"><a href="#0" data-date="05/09/2020" class="cd-h-timeline__date"></a></li>
+                                <li><a href="#0" data-date="01/04/2020" class="cd-h-timeline__date cd-h-timeline__date--selected">1</a></li>
+                                <li><a href="#0" data-date="02/05/2020" class="cd-h-timeline__date">2</a></li>
+                                <li><a href="#0" data-date="02/05/2020" class="cd-h-timeline__date">3</a></li>
+                                <li><a href="#0" data-date="03/06/2020" class="cd-h-timeline__date">4</a></li>
+                                <li><a href="#0" data-date="04/07/2020" class="cd-h-timeline__date">5</a></li>
+                                <li><a href="#0" data-date="05/08/2020" class="cd-h-timeline__date">6</a></li>
                             </ol>
                             <span class="cd-h-timeline__filling-line" aria-hidden="true"></span>
                         </div>
@@ -121,18 +125,18 @@ if ( window.performance ) {
                     <ol class="row">
                         <li class="col-12 cd-h-timeline__event cd-h-timeline__event--selected text-component">
                             <div class="cd-h-timeline__event-content container">
-                                <div class="row">
-                                    <div class="col-12 col-md-5">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-5 order-2 order-md-1">
                                         <img class="illustrations-step" src="assets/images/illustration-orientation.png">
                                     </div>
-                                    <div class="col-12 col-md-7">
-                                        <h2 class="cd-h-timeline__event-title">Détection et orientation</h2>
-                                        <div class="text-left" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-mauve">Médecine de ville</button>
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-blue">EPHAD</button>
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-blue-light">Services sociaux</button>
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-mauve">Consultation à distance</button>
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-purple">Initiative personnelle</button>
+                                    <div class="col-12 col-md-7 order-1 order-md-2 mb-4">
+                                        <h2 class="cd-h-timeline__event-title text-center text-md-left mb-3">• Détection et orientation</h2>
+                                        <div class="text-center text-md-left" role="group" aria-label="Basic example">
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-mauve disabled" role="button" aria-disabled="true">Médecine de ville</a>
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-blue disabled" role="button" aria-disabled="true">EPHAD</a>
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-blue-light disabled" role="button" aria-disabled="true">Services sociaux</a>
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-mauve disabled" role="button" aria-disabled="true">Consultation à distance</a>
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-purple disabled" role="button" aria-disabled="true">Initiative personnelle</a>
                                         </div>
                                     </div>
                                 </div>
@@ -140,16 +144,16 @@ if ( window.performance ) {
                         </li>
                         <li class="col-12 cd-h-timeline__event text-component">
                             <div class="cd-h-timeline__event-content container">
-                                <div class="row">
-                                    <div class="col-12 col-md-5">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-5 order-2 order-md-1">
                                         <img class="illustrations-step" src="assets/images/illustration-deplacement.png">
                                     </div>
-                                    <div class="col-12 col-md-7">
-                                        <h2 class="cd-h-timeline__event-title">Transport des patients</h2>
-                                        <div class="text-left" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-mauve">SAMU</button>
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-blue">Ambulance</button>
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-blue-light">Individus</button>
+                                    <div class="col-12 col-md-7 order-1 order-md-2 mb-4">
+                                        <h2 class="cd-h-timeline__event-title text-center text-md-left mb-3">• Transport des patients</h2>
+                                        <div class="text-center text-md-left" role="group" aria-label="Basic example">
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-mauve disabled" role="button" aria-disabled="true">SAMU</a>
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-blue disabled" role="button" aria-disabled="true">Ambulance</a>
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-blue-light disabled" role="button" aria-disabled="true">Individus</a>
                                         </div>
                                     </div>
                                 </div>
@@ -157,16 +161,16 @@ if ( window.performance ) {
                         </li>
                         <li class="col-12 cd-h-timeline__event text-component">
                             <div class="cd-h-timeline__event-content container">
-                                <div class="row">
-                                    <div class="col-12 col-md-5">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-5 order-2 order-md-1">
                                         <img class="illustrations-step" src="assets/images/illustration-centre-stockage.png">
                                     </div>
-                                    <div class="col-12 col-md-7">
-                                        <h2 class="cd-h-timeline__event-title">Zone tampon</h2>
-                                        <div class="text-left" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-mauve">SAMU</button>
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-blue">Médecins de ville</button>
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-blue-light">Police administrative</button>
+                                    <div class="col-12 col-md-7 order-1 order-md-2 mb-4">
+                                        <h2 class="cd-h-timeline__event-title text-center text-md-left mb-3">• Zone tampon</h2>
+                                        <div class="text-center text-md-left" role="group" aria-label="Basic example">
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-mauve disabled" role="button" aria-disabled="true">SAMU</a>
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-blue disabled" role="button" aria-disabled="true">Médecins de ville</a>
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-blue-light disabled" role="button" aria-disabled="true">Police administrative</a>
                                         </div>
                                     </div>
                                 </div>
@@ -174,15 +178,15 @@ if ( window.performance ) {
                         </li>
                         <li class="col-12 cd-h-timeline__event text-component">
                             <div class="cd-h-timeline__event-content container">
-                                <div class="row">
-                                    <div class="col-12 col-md-5">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-5 order-2 order-md-1">
                                         <img class="illustrations-step" src="assets/images/illustration-traitement.png">
                                     </div>
-                                    <div class="col-12 col-md-7">
-                                        <h2 class="cd-h-timeline__event-title">Prise en charge et traitement</h2>
-                                        <div class="text-left" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-mauve">Hôpitaux publics</button>
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-blue">Hôpitaux privés</button>
+                                    <div class="col-12 col-md-7 order-1 order-md-2 mb-4">
+                                        <h2 class="cd-h-timeline__event-title text-center text-md-left mb-3">• Prise en charge et traitement</h2>
+                                        <div class="text-center text-md-left" role="group" aria-label="Basic example">
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-mauve disabled" role="button" aria-disabled="true">Hôpitaux publics</a>
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-blue disabled" role="button" aria-disabled="true">Hôpitaux privés</a>
                                         </div>
                                     </div>
                                 </div>
@@ -190,19 +194,19 @@ if ( window.performance ) {
                         </li>
                         <li class="col-12 cd-h-timeline__event text-component">
                             <div class="cd-h-timeline__event-content container">
-                                <div class="row">
-                                    <div class="col-12 col-md-4">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-5 order-2 order-md-1">
                                         <img class="illustrations-step" src="assets/images/illustration-suivi.png">
                                     </div>
-                                    <div class="col-12 col-md-8">
-                                        <h2 class="cd-h-timeline__event-title">Suivi domicile post-hospitalisation</h2>
-                                        <div class="text-left" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-mauve">Médecine de ville</button>
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-blue">EPHAD</button>
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-blue-light">Services sociaux</button>
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-purple">Consultation à distance</button>
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-mauve">Évaluation digitale</button>
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-blue">SAMU</button>
+                                    <div class="col-12 col-md-7 order-1 order-md-2 mb-4">
+                                        <h2 class="cd-h-timeline__event-title text-center text-md-left mb-3">• Suivi domicile post-hospitalisation</h2>
+                                        <div class="text-center text-md-left" role="group" aria-label="Basic example">
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-mauve disabled" role="button" aria-disabled="true">Médecine de ville</a>
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-blue disabled" role="button" aria-disabled="true">EPHAD</a>
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-blue-light disabled" role="button" aria-disabled="true">Services sociaux</a>
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-purple disabled" role="button" aria-disabled="true">Consultation à distance</a>
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-mauve disabled" role="button" aria-disabled="true">Évaluation digitale</a>
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-blue disabled" role="button" aria-disabled="true">SAMU</a>
                                         </div>
                                     </div>
                                 </div>
@@ -210,30 +214,15 @@ if ( window.performance ) {
                         </li>
                         <li class="col-12 cd-h-timeline__event text-component">
                             <div class="cd-h-timeline__event-content container">
-                                <div class="row">
-                                    <div class="col-12 col-md-5">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-5 order-2 order-md-1">
                                         <img class="illustrations-step" src="assets/images/illustration-funeraille.png">
                                     </div>
-                                    <div class="col-12 col-md-7">
-                                        <h2 class="cd-h-timeline__event-title">Parcours funéraire</h2>
-                                        <div class="text-left" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-mauve">Hôpitaux</button>
-                                            <button type="button" class="btn btn-sm ml-1 btn-border cov-btn-blue">Services funéraires</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="col-12 cd-h-timeline__event text-component">
-                            <div class="cd-h-timeline__event-content container">
-                                <div class="row">
-                                    <div class="col-12 col-md-5">
-                                        <img class="illustrations-step" src="assets/images/illustration-suivi.png">
-                                    </div>
-                                    <div class="col-12 col-md-7">
-                                        <h2 class="cd-h-timeline__event-title">Accédez au guide pratique</h2>
-                                        <div class="text-left" role="group" aria-label="Basic example">
-                                            <a class="btn btn-sm ml-1 btn-border cov-btn-mauve" href="guide-pratique.html">Cliquez-ici</a>
+                                    <div class="col-12 col-md-7 order-1 order-md-2 mb-4">
+                                        <h2 class="cd-h-timeline__event-title text-center text-md-left mb-3">• Parcours funéraire</h2>
+                                        <div class="text-center text-md-left" role="group" aria-label="Basic example">
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-mauve disabled" role="button" aria-disabled="true">Hôpitaux</a>
+                                            <a href="#" class="btn btn-sm ml-1 btn-border cov-btn-blue disabled" role="button" aria-disabled="true">Services funéraires</a>
                                         </div>
                                     </div>
                                 </div>
@@ -242,50 +231,67 @@ if ( window.performance ) {
                     </ol>
                 </div>
             </div>
+
         </section>
-        <section class="container-fluid" style="margin-bottom: 50px; position: relative; height: 350px; background-image: linear-gradient(var(--mauve), var(--blue-light));">
+
+        <section class="container">
+            <div class="row justify-content-center p-5">
+                <a class="btn btn-lg btn-border cov-btn-mauve" href="guide-pratique.html">Accédez au guide</a>
+            </div>
+        </section>
+        
+        <section class="container-fluid" style="margin-bottom: 50px; position: relative; background-image: linear-gradient(var(--mauve), var(--blue-light));">
             <div class="row justify-content-center" style="height: 100%">
+
                 <svg style="position: absolute; left:0; top: 0; width: 100%; height: 50px; transform: rotate(180deg) scaleX(-1); -webkit-transform: rotate(180deg) scaleX(-1);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01" preserveAspectRatio="none">
                     <path style="" fill="#fafafa" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0 -135.53)" /></svg>
-                <div class="col-12 text-center text-white align-self-center align-middle">
-                    <h1>Mise en place d’une cellule de crise</h1>
+                
+                <div class="container text-white" style="margin-bottom: 80px">
+                    <div class="row p-2 my-4">
+
+                        <div class="col-12 text-center align-self-center align-middle" style="margin-top: 80px; margin-bottom: 80px">
+                            <h1>Découvrez comment mettre en place une cellule de crise</h1>
+                        </div>
+
+                        <div class="col-12 col-md-6 px-4">
+                            <h3>Quoi?</h3>
+                            <p>Un accueil des patients, une validation ou non du COVID, la création de lieux dédiés et confinés, l’orientation vers des traitements hospitraliers. Salle d’attente et lieu de consultation</p>
+                        </div>
+                        <div class="col-12 col-md-6 px-4">
+                            <h3>Pourquoi?</h3>
+                            <p>Afin de lutter efficacement contre l'épidémie il est nécessaire de coordonner toutes les forces locales afin de créer de la synergie dans les politiques publiques développées pour lutter contre l’épidémie</p>
+                        </div>
+                    </div>
+                    <div class="row p-2 my-4">
+                        <div class="col-12 col-md-6 px-4">
+                            <h3>Qui?</h3>
+                            <p>Par dérogation au droit commun, la responsabilité pénale et financière du Maire (ou du Pdt de la comcom) est dégagée dès lors que son action s’inscrit dans la lutte légitime contre la pandémie.</p>
+                        </div>
+                        <div class="col-12 col-md-6 px-4">
+                            <h3>Où?</h3>
+                            <p>Lieux confinés créés par la mairie, aménagés selon consignes ARS du 20 mars</p>
+                        </div>
+                    </div>
+                    <div class="row p-2 my-4">
+                        <div class="col-12 col-md-6 px-4">
+                            <h3>Comment?</h3>
+                            <p>Un guide opérationnel est mis à dispoition des maires. Consigne d’équipement ARS du 20 mars 2020</p>
+                        </div>
+                        <div class="col-12 col-md-6 px-4">
+                            <h3>Quand?</h3>
+                            <p>Dès que les premiers cas apparaissent dans le basin de population, en concertation avec les médecins traitants. Le centre est un point de passage avant le 15 via qui il adresse le patient à un centre hospitalier</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <a class="btn btn-lg btn-border cov-btn-orange" href="guide-pratique.html">Accédez au guide</a>
+                    </div>
                 </div>
+
                 <svg style="position: absolute; left:0; bottom: 0; width: 100%; height: 50px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01" preserveAspectRatio="none">
                     <path style="" fill="#fafafa" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z" transform="translate(0 -135.53)" /></svg>
             </div>
         </section>
-        <section id="faq" class="container my-4">
-            <div class="row p-2 my-4">
-                <div class="col-12 col-md-6">
-                    <h3>Quoi?</h3>
-                    <p>Un accueil des patients, une validation ou non du COVID, la création de lieux dédiés et confinés, l’orientation vers des traitements hospitraliers. Salle d’attente et lieu de consultation</p>
-                </div>
-                <div class="col-12 col-md-6">
-                    <h3>Pourquoi?</h3>
-                    <p>Afin de lutter efficacement contre l'épidémie il est nécessaire de coordonner toutes les forces locales afin de créer de la synergie dans les politiques publiques développées pour lutter contre l’épidémie</p>
-                </div>
-            </div>
-            <div class="row p-2 my-4">
-                <div class="col-12 col-md-6">
-                    <h3>Qui?</h3>
-                    <p>Par dérogation au droit commun, la responsabilité pénale et financière du Maire (ou du Pdt de la comcom) est dégagée dès lors que son action s’inscrit dans la lutte légitime contre la pandémie.</p>
-                </div>
-                <div class="col-12 col-md-6">
-                    <h3>Où?</h3>
-                    <p>Lieux confinés créés par la mairie, aménagés selon consignes ARS du 20 mars</p>
-                </div>
-            </div>
-            <div class="row p-2 my-4">
-                <div class="col-12 col-md-6">
-                    <h3>Comment?</h3>
-                    <p>Un guide opérationnel est mis à dispoition des maires. Consigne d’équipement ARS du 20 mars 2020</p>
-                </div>
-                <div class="col-12 col-md-6">
-                    <h3>Quand?</h3>
-                    <p>Dès que les premiers cas apparaissent dans le basin de population, en concertation avec les médecins traitants. Le centre est un point de passage avant le 15 via qui il adresse le patient à un centre hospitalier</p>
-                </div>
-            </div>
-        </section>
+        
     </main>
     <script type="text/javascript" id="cookiebanner" src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.2.2/cookiebanner.min.js" data-close-text="J'accepte" data-message="Ce site web utilise des APIs tiers pour fonctionner correctement, des cookies sont susceptibles d'être stockés<br>mais nous ne collectons aucune information privée." data-bg="#64AEFF" data-height="64px" data-linkmsg="En savoir plus" data-font-family="'Open Sans', sans-serif" data-fg="#fff" data-link="#fff" data-close-style="padding:5px 10px; float:right; border:1px solid white; margin:10px">
     </script>
@@ -303,8 +309,8 @@ if ( window.performance ) {
                 </svg>
             </div>
             <div class="col-12 col-md text-center mb-3 align-self-center">
-                <small class="d-block mb-3 text-muted">
-                    <span class="d-block">Covilience est un projet impulsé par</span>
+                <small class="d-block mb-3">
+                    <span class="d-block text-muted">Covilience est un projet impulsé par</span>
                     <span class="d-block mt-2" style="font-weight: bold; font-size: 1.2rem; font-family: 'Playfair Display', serif;">
                         Option Public
                     </span>
