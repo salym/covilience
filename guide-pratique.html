@@ -48,7 +48,7 @@ if ( window.performance ) {
             </span>
         </a>
 
-        <button class="btn btn-primary ml-auto d-lg-none" style="color:var(--blue-light)" id="menu-toggle">Sommaire</button>
+        <button class="btn btn-primary ml-auto d-lg-none" style="color:var(--blue-light)" id="menu-toggle">Sommaire<br class="d-sm-none"> du guide</button>
         
         <div class="collapse navbar-collapse" id="menu">
 
@@ -88,26 +88,8 @@ if ( window.performance ) {
 
     <main role="main">
         <div class="d-flex" id="wrapper">
-            <!-- Sidebar -->
-            <div class="bg-light border-right" id="sidebar-wrapper">
-                <div class="sidebar-heading">Guide pratique</div>
-                <div class="list-group list-group-flush" role="tablist nav nav-tabs">
-                    <a class="list-group-item list-group-item-action bg-light nav-link active" id="introduction-tab" data-toggle="tab" href="#introduction" role="tab" aria-controls="introduction" aria-selected="true">Introduction</a>
-                    <a class="list-group-item list-group-item-action bg-light nav-link" id="objectifs-tab" data-toggle="tab" href="#objectifs" role="tab" aria-controls="introduction" aria-selected="true">Objectifs</a>
-                    <a class="list-group-item list-group-item-action bg-light nav-link" id="macro-tab" data-toggle="tab" href="#macro" role="tab" aria-controls="introduction" aria-selected="true">Chaîne et Macro</a>
-                    <a class="list-group-item list-group-item-action bg-light nav-link" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="introduction" aria-selected="true">Généralités</a>
-                    <a class="list-group-item list-group-item-action bg-light nav-link" id="organisation-tab" data-toggle="tab" href="#organisation" role="tab" aria-controls="introduction" aria-selected="true">Centres de tri</a>
-                    <a class="list-group-item list-group-item-action bg-light nav-link" id="plans-tab" data-toggle="tab" href="#plans" role="tab" aria-controls="introduction" aria-selected="true">Plans Physiques</a>
-                    <a class="list-group-item list-group-item-action bg-light nav-link" id="realisation-tab" data-toggle="tab" href="#realisation" role="tab" aria-controls="introduction" aria-selected="true">Réalisations et directives en cours</a>
-                    <a class="list-group-item list-group-item-action bg-light nav-link" id="cellule-tab" data-toggle="tab" href="#cellule" role="tab" aria-controls="introduction" aria-selected="true">Cellules de crise</a>
-                    <a class="list-group-item list-group-item-action bg-light nav-link" id="numerique-tab" data-toggle="tab" href="#numerique" role="tab" aria-controls="introduction" aria-selected="true">Solution numérique</a>
-                    <a class="list-group-item list-group-item-action bg-light mt-4" href="https://github.com/salym/covilience" target="_blank">
-                        <img class="float-left mr-1" src="assets/icon/github.png" height="32px" width="32px">
-                        Éditez-moi sur Github
-                    </a>
-                </div>
-            </div>
-            <div id="page-content-wrapper">
+            
+            <div id="page-content-wrapper" class="order-1 order-lg-2">
                 <div class="container-fluid tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="introduction" role="tabpanel" aria-labelledby="introduction-tab">
                         <h2>Schéma Directeur Parcours Patient COVID</h2>
@@ -473,6 +455,29 @@ if ( window.performance ) {
                     </div>
                 </div>
             </div>
+
+            <!-- Sidebar -->
+            <div class="bg-light border-left order-2 order-lg-1" id="sidebar-wrapper">
+                <div class="sticky-top sticky-offset">
+                    <div class="sidebar-heading">Guide pratique</div>
+                    <div class="list-group list-group-flush" role="tablist nav nav-tabs">
+                        <a class="list-group-item list-group-item-action bg-light nav-link active" id="introduction-tab" data-toggle="tab" href="#introduction" role="tab" aria-controls="introduction" aria-selected="true">Introduction</a>
+                        <a class="list-group-item list-group-item-action bg-light nav-link" id="objectifs-tab" data-toggle="tab" href="#objectifs" role="tab" aria-controls="introduction" aria-selected="true">Objectifs</a>
+                        <a class="list-group-item list-group-item-action bg-light nav-link" id="macro-tab" data-toggle="tab" href="#macro" role="tab" aria-controls="introduction" aria-selected="true">Chaîne et Macro</a>
+                        <a class="list-group-item list-group-item-action bg-light nav-link" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="introduction" aria-selected="true">Généralités</a>
+                        <a class="list-group-item list-group-item-action bg-light nav-link" id="organisation-tab" data-toggle="tab" href="#organisation" role="tab" aria-controls="introduction" aria-selected="true">Centres de tri</a>
+                        <a class="list-group-item list-group-item-action bg-light nav-link" id="plans-tab" data-toggle="tab" href="#plans" role="tab" aria-controls="introduction" aria-selected="true">Plans Physiques</a>
+                        <a class="list-group-item list-group-item-action bg-light nav-link" id="realisation-tab" data-toggle="tab" href="#realisation" role="tab" aria-controls="introduction" aria-selected="true">Réalisations et directives en cours</a>
+                        <a class="list-group-item list-group-item-action bg-light nav-link" id="cellule-tab" data-toggle="tab" href="#cellule" role="tab" aria-controls="introduction" aria-selected="true">Cellules de crise</a>
+                        <a class="list-group-item list-group-item-action bg-light nav-link" id="numerique-tab" data-toggle="tab" href="#numerique" role="tab" aria-controls="introduction" aria-selected="true">Solution numérique</a>
+                        <a class="list-group-item list-group-item-action bg-light mt-4" href="https://github.com/salym/covilience" target="_blank">
+                            <img class="float-left mr-1" src="assets/icon/github.png" height="32px" width="32px">
+                            Éditez-moi sur Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </main>
     <script type="text/javascript" id="cookiebanner" src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.2.2/cookiebanner.min.js" data-close-text="J'accepte" data-message="Ce site web utilise des APIs tiers pour fonctionner correctement, des cookies sont susceptibles d'être stockés<br>mais nous ne collectons aucune information privée." data-bg="#64AEFF" data-height="64px" data-linkmsg="En savoir plus" data-font-family="'Open Sans', sans-serif" data-fg="#fff" data-link="#fff" data-close-style="padding:5px 10px; float:right; border:1px solid white; margin:10px">

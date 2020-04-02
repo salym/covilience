@@ -10,7 +10,7 @@ $( document ).ready( function () {
 
         e.preventDefault();
 
-        if ( $( "#menu-toggle" ).css("display") == "block" && parseInt( $(window).width() ) < 767.98) {
+        if ( $( "#menu-toggle" ).css("display") == "block" && parseInt( $(window).width() ) < 992) {
             $( "#wrapper" ).toggleClass( "toggled" );
         }
 
