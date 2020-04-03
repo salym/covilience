@@ -323,3 +323,59 @@ footer {
         height: 600px;
     }
 }
+
+.avatar-card-container {
+    margin-bottom: 200px;
+}
+
+.avatar-card {
+    padding-top: 100px;
+}
+
+.fonctions {
+    padding: 5px 20px;
+}
+
+.avatar-img-container {
+    z-index: 3;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-style1 {
+    border: 2px solid var(--red);
+}
+
+.card-style2 {
+    border: 2px solid var(--purple);
+}
+
+.badges {
+    height: 32px;
+    width: 32px;
+    padding-right: 5px;
+    /* align-content: end; */
+}
+
+#formSoutien {
+    height:1800px;
+    width:60%;
+    border:none;
+}
+
+
+@media (max-width: 1000px) {
+
+    #formSoutien {
+        width:90%;
+    }
+}
