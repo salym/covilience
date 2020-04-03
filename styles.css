@@ -351,6 +351,23 @@ footer {
     background-size: cover;
 }
 
+.avatar-placeholder-container {
+    z-index: 3;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+    background: var(--orange);
+}
+
+.avatar-placeholder-container p {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+}
+
 .card-style1 {
     border: 2px solid var(--red);
 }
@@ -363,7 +380,6 @@ footer {
     height: 32px;
     width: 32px;
     padding-right: 5px;
-    /* align-content: end; */
 }
 
 #formSoutien {
@@ -374,8 +390,13 @@ footer {
 
 
 @media (max-width: 1000px) {
-
     #formSoutien {
         width:90%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    body {
+        padding-top: 4rem;
     }
 }
