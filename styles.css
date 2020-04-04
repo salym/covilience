@@ -379,7 +379,7 @@ footer {
 .badges {
     height: 32px;
     width: 32px;
-    padding-right: 5px;
+    margin-right: 5px;
 }
 
 #formSoutien {

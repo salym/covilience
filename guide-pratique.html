@@ -29,15 +29,36 @@ if ( window.performance ) {
 }
 </script>
     <link rel="stylesheet" href="styles.css" />
+    <style type="text/css">
+        body {
+            padding-top:7rem;
+        }
+
+        @media (max-width: 575.98px) {
+           body {
+                padding-top:9rem;
+            }
+        }
+
+        #menu-toggle {
+            color: var(--dark);
+            padding: .25rem .75rem;
+            font-size: 1.25rem;
+            border: 1px solid rgba(0,0,0,.1);
+            border-radius: .125rem;
+            background: transparent;
+            cursor: pointer;
+            box-shadow: 0 1px 1px 0 rgba(0,0,0,.14);
+        }
+    </style>
 </head>
 
-<body style="padding-top:6rem;">
+<body>
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            
         </button>
 
         <a class="navbar-brand pl-4 my-sm-2 my-md-0 mr-auto d-inline-block d-lg-none" href="#">
@@ -48,7 +69,7 @@ if ( window.performance ) {
             </span>
         </a>
 
-        <button class="btn btn-primary ml-auto d-lg-none" style="color:var(--blue-light)" id="menu-toggle">Sommaire<br class="d-sm-none"> du guide</button>
+        <button id="menu-toggle" class="ml-auto d-lg-none col-12 col-sm-4">Sommaire<!-- <br class="d-sm-none"> --> du guide ▾</button>
         
         <div class="collapse navbar-collapse" id="menu">
 
@@ -520,7 +541,7 @@ if ( window.performance ) {
         </div>
         <div class="row">
             <div class="col-12 text-center text-secondary">
-                <p><a class="text-muted" href="mentions-legales.html">Mentions légales & Conditions d'utilisation</a></p>
+                <small><a class="text-muted" href="mentions-legales.html">Mentions légales & Conditions d'utilisation</a></small>
             </div>
         </div>
     </footer>
