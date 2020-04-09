@@ -4,7 +4,7 @@ Allow: /index.html
 Allow: /guide-pratique.html
 Allow: /soutiens.html
 Allow: /formulaire-soutien.html
-Allow: /documents.html
+Allow: /ressources.html
 Allow: /contact.html
 Allow: /mentions-legales.html
 Allow: /sitemap.xml
