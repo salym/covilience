@@ -1,13 +1,15 @@
+# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow: *
-Allow: /index.html
-Allow: /guide-pratique.html
-Allow: /soutiens.html
-Allow: /formulaire-soutien.html
-Allow: /ressources.html
-Allow: /contact.html
-Allow: /mentions-legales.html
-Allow: /sitemap.xml
-Allow: /assets/
+Allow: /
+Allow: /produits
+Allow: /guide-pratique
+Allow: /soutiens
+Allow: /formulaire-soutien
+Allow: /ressources
+Allow: /contact
+Allow: /mentions-legales
+Allow: /images/assets/documents/
+Allow: /images/assets/products/
 
 Sitemap: https://covilience.org/sitemap.xml
