@@ -1,14 +1,15 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow: *
-Allow: /
-Allow: /produits
-Allow: /guide-pratique
-Allow: /soutiens
-Allow: /formulaire-soutien
-Allow: /ressources
-Allow: /contact
-Allow: /mentions-legales
+Allow: /#
+Allow: /#/produits
+Allow: /#/guide-pratique
+Allow: /#/soutiens
+Allow: /#/formulaire-soutien
+Allow: /#/ressources
+Allow: /#/contact
+Allow: /#/mentions-legales
+Allow: /#/conditions-vente
 Allow: /images/assets/documents/
 Allow: /images/assets/products/
 
