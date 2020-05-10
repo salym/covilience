@@ -20,7 +20,7 @@ $( document ).ready( function () {
         .not( '[href="#"]' )
         .not( '[href="#0"]' )
         .click( function ( event ) {
-            console.log( "On-page links" );
+            // console.log( "On-page links" );
             if (
                 location.pathname.replace( /^\//, '' ) == this.pathname.replace( /^\//, '' ) &&
                 location.hostname == this.hostname
@@ -46,7 +46,7 @@ $( document ).ready( function () {
         } );
 
     $( 'a[href="#"]' ).click( function ( event ) {
-        console.log( "On-page links" );
+        // console.log( "On-page links" );
         if (
             location.pathname.replace( /^\//, '' ) == this.pathname.replace( /^\//, '' ) &&
             location.hostname == this.hostname
